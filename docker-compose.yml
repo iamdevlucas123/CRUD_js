@@ -31,7 +31,7 @@ services:
       - db
     command: sh -c "npm install && node src/server.js"
     ports:
-      - "${PORT:-3000}:3000"
+      - "${PORT:-3001}:${PORT:-3001}"
 
 volumes:
   db_data:
