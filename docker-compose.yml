@@ -29,7 +29,7 @@ services:
       MYSQL_HOST: db
     depends_on:
       - db
-    command: sh -c "npm install && node src/backend/server.js"
+    command: sh -c "npm install && node src/server.js"
     ports:
       - "${PORT:-3000}:3000"
 
